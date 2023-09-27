@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>kalkulator</title>
+    <script src="calculator.js"></script>
+</head>
+<body>
+    <h1>kalkulator</h1>
+    <form id="calculator-form">
+        <label for="num1">Angka 1:</label>
+        <input type="number" id="num1" required>
+        <br>
+        <label for="num2">Angka 2:</label>
+        <input type="number" id="num2" required>
+        <br>
+        <button type="button" onclick="tambah()">+</button>
+        <button type="button" onclick="kurang()">-</button>
+        <button type="button" onclick="kali()">x</button>
+        <button type="button" onclick="bagi()">:</button>
+    </form>
+    <p id="result"></p>
+
+    
+</body>
+</html>

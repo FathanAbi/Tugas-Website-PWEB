@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>kalkulator</title>
+    <script src="calculator.js"></script>
+</head>
+<body>
+    <h1>kalkulator</h1>
+    <form id="calculator-form">
+        <h2 id="field"></h2>
+        <br>
+        
+        <button type="button" onclick="onClick(1)">1</button>
+        <button type="button" onclick="onClick(2)">2</button>
+        <button type="button" onclick="onClick(3)">3</button><br>
+        <button type="button" onclick="onClick(4)">4</button>
+        <button type="button" onclick="onClick(5)">5</button>
+        <button type="button" onclick="onClick(6)">6</button><br>
+        <button type="button" onclick="onClick(7)">7</button>
+        <button type="button" onclick="onClick(8)">8</button>
+        <button type="button" onclick="onClick(9)">9</button><br>
+        <button type="button" onclick="onClick(0)">0</button>
+        <button type="button" onclick="backspace()">backspace</button>
+        <button type="button" onclick="clearText()">clear</button><br>
+        <button type="button" onclick="onClick('+')">+</button>
+        <button type="button" onclick="onClick('-')">-</button>
+        <button type="button" onclick="onClick('*')">x</button>
+        <button type="button" onclick="onClick('/')">:</button><br>
+    </form>
+    <p id="result"></p>
+
+    <script>
+        function onClick(char){
+            document.getElementById("field").append(char);
+        }
+        
+        function backspace(){
+            const element = document.getElementById("field");
+            let content = element.textContent;
+
+            // Step 3: Use string manipulation to remove a character (e.g., the last character)
+            content = content.slice(0, -1); // Remove the last character
+
+            // Step 4: Assign the modified content back to the element
+            element.textContent = content;
+            console.log("backspace");
+        }
+
+        function clearText(){
+            // Step 1: Select the HTML element
+            const element = document.getElementById("field");
+
+            // Step 2: Set the content to an empty string
+            element.textContent = "";
+        }
+    </script>
+</body>
+</html>
