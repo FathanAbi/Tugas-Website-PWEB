@@ -2,55 +2,13 @@
 <html>
 <head>
     <title>Weather App</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/plyr/3.6.3/plyr.css">
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <a class="navbar-brand" href="#">Your Video Platform</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item active">
-                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Trending</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Subscriptions</a>
-                </li>
-            </ul>
-        </div>
-    </nav>
-  
-    <div class="container mt-4">
-        <div class="row">
-            <div class="col-lg-6 offset-lg-3">
-                <form class="form-inline">
-                    <input class="form-control mr-sm-2"type="search" placeholder="Search" aria-label="Search" id="search">
-                    <button class="btn btn-outline-success my-2 my-sm-0" type="search" placeholder="Search" aria-label="Search" onclick="getList()">Search</button>
-                </form>
-                
-            </div>
-        </div>
-    </div>
-
-    
-
-    
-    
-
-    <div id="display-video">
-        <ul id="video-list">
-            
-        </ul>
-    </div>
-    
+    <h1>Weather Information</h1>
+    <label for="city">Enter City:</label>
+    <input type="text" id="city" placeholder="Enter a city">
+    <button onclick="getWeatherInfo()">Get Weather</button>
+    <div id="weather-info"></div>
 
     <script src="index.js"></script>
 </body>
