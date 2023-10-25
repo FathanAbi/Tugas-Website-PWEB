@@ -49,7 +49,7 @@ function getWeatherInfo() {
     let url = `https://weatherapi-com.p.rapidapi.com/current.json?q=${city}`;
 
     xhr.open('GET', url);
-    xhr.setRequestHeader('X-RapidAPI-Key', '011135629dmsh1a9714889029b7ep12da5djsnc9cb36f3ae86');
+    xhr.setRequestHeader('X-RapidAPI-Key', API_KEY);
     xhr.setRequestHeader('X-RapidAPI-Host', 'weatherapi-com.p.rapidapi.com');
 
     xhr.send(data);
