@@ -1,0 +1,2 @@
+This is AJAX.txt content
+AAAA

@@ -1,87 +1,52 @@
 <!DOCTYPE html>
-<html lang="en" style="margin: 0px;">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WikiMeme</title>
-    <link rel="icon" href="./img/fav.ico">
+    <title>Weather App</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
 </head>
-<body style="margin: 0px; ">
-    <div class="header" style="text-align: center; background-color: #C3ACD0; margin: 0px; padding: 10px;">
-        <h1 style="margin: 0px;">WIKIMEME</h1>
-        <h2>Meme Encyclopedia</h2>
-        <a href="./upload.html" alt><h4>Upload Page</h3></a>
-        <a href="./login.html"><h4>Login</h3></a>
-        <a href="./signup.html"><h4>Sign Up</h3></a>
-        
-        
-       
+<body>
+    <!-- <h1>Weather Information</h1>
+    <label for="city">Enter City:</label>
+    <input type="text" id="city" placeholder="Enter a city">
+    <button onclick="getWeatherInfo()">Get Weather</button>
+    <div id="weather-info"></div> -->
+
+    <div class="container mx-auto mt-5">
+        <form class="form-inline">
+            <div class="input-group mx-auto">
+                <input type="text" class="form-control" id="city" placeholder="Masukkan kota" aria-label="Search" aria-describedby="search-button">
+                <div class="input-group-append">
+                    <button class="btn btn-outline-secondary" type="button" onclick="getWeatherInfo()" id="search-button">Search</button>
+                </div>
+            </div>
+        </form>
     </div>
 
-    <div class="content" style="text-align: center;">
-        <div class="meme">
-            <h1 class="meme-title">Amogus</h1>
-            <a href="https://www.youtube.com/watch?v=a0SDzM37b34&pp=ygULYW1vZ3VzIGxpbWM%3D">
-                <img src="./img/amogus comic strip.png" alt="amogus comic strip" width="300" >
-            </a>
-            
-            <p class="meme-description" style="margin-right: 250px; margin-left: 250px;">
-                Amogus adalah versi terdistorsi dari nama permainan video tahun 2018 yang disebut 
-                Among Us. Pada bulan Januari 2021, kata ini menjadi populer sebagai frase yang 
-                digunakan dalam meme- meme ironis, seringkali digunakan untuk menggantikan dialog 
-                dalam kartun, dan sebagai cara berkontribusi dengan membanjiri frasa tersebut 
-                bersama dengan kata "sus." Selain itu, Amogus merujuk pada gambar sederhana seorang 
-                kru dari Among Us yang digunakan dalam meme. Pada bulan Mei 2021, panel Amogus 
-                kembali populer sebagai format referensi budaya pop dan sejarah, dengan kata tersebut 
-                diubah menjadi nama tiga suku kata yang diakhiri dengan "us," seperti "Columbus," 
-                dan panel digambar ulang sesuai dengan itu.</p>
-        </div>
+    <div class="container mx-auto" style="margin-top: 50px;" id="weather-info"></div>
 
-        <div class="meme">
-            <h1 class="meme-title">Gigachad</h1>
-            <a href="https://youtu.be/TZudFcSE2ts">
-                <img src="./img/gigachad.jpg" alt="gigachad" width="300" >
-            </a>
-            
-            <p class="meme-description" style="margin-right: 250px; margin-left: 250px;">
-                "GigaChad" adalah julukan yang terkait dengan proyek seni berlin.1969 / Ernest Khalimov,[1] 
-                yang merupakan serangkaian foto yang disunting oleh beberapa model yang diciptakan oleh 
-                fotografer Rusia Krista Sudmalis untuk proyeknya yang disebut Sleek'N'Tears.[4] Nama 
-                "GigaChad" mengindikasikan bahwa orang yang awalnya dianggap nyata adalah Chad Thundercock 
-                yang utama, sebuah arketipe internet yang mewakili pria yang sangat maskulin dan menarik 
-                secara seksual. Secara daring, istilah ini populer di berbagai komunitas incel.</p>
-        </div>
+    <div class="container mx-auto" style="margin-top: 50px;">
+        <!-- <div class="row">
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <p class="card-body">Weather in ${weather.location.name}</p>
+                </div>
+               
+            </div>
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <p class="card-body">Temperature: ${weather.current.temp_c}°C</p>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <p class="card-body">Weather: ${weather.current.condition.text}</p>
+                </div>
+            </div>
+
+        </div> -->
     </div>
 
-    <div content>
-
-    </div>
-
-    <div class="footer" style="text-align: center; background-color: #C3ACD0; padding: 10px;">
-        <p>disclaimer: website ini adalah bentuk tugas membuat website mata kuliah pemrograman web. tidak untuk dijadikan sumber yang valid</p>
-        <p style="margin-bottom: 0px;">copyright 2023</p>
-
-        <table style="text-align: center; margin: 0 auto;">
-            <th>Contact list</th>
-            <tr>
-                <td>
-                    <a href="https://www.instagram.com/abi__80_/">Instagram</a>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <a href="https://www.youtube.com/channel/UCxZtK5jxucgTp0wJoLSdPoA">Youtube</a>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <a href="https://www.linkedin.com/in/fathan-abi-karami/">Linkedin</a>
-                </td>
-            </tr>
-        </table>
-    </div>
-   
-    
-    
+    <script src="index.js"></script>
 </body>
 </html>
