@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <div id="app">
+        Hasil : {{ hasil }} <br>
+        <input v-model="angka1" type="number">
+        <input v-model="angka2" type="number">
+        <button @click="hasil=angka1+angka2">+</button>
+        <button @click="hasil=angka1-angka2">-</button>
+        <button @click="hasil=angka1*angka2">*</button>
+        <button @click="hasil=angka1/angka2">/</button>
+    </div>
+
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script>
+        const app = Vue.createApp({
+            data(){
+                return {
+                    angka1: 0,
+                    angka2: 0,
+                    hasil: 0,
+                }
+            }
+        })
+        app.mount("#app");
+    </script>
+   
+      
+    
+</body>
+</html>
